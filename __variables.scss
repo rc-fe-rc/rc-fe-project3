@@ -1,6 +1,51 @@
 $color-purple: #9356DC;
+$color-purple-light: #f6e8fa;
 $color-pink: #FF79DA;
 $color-green: #99E2D0;
+$color-white: #ffffff;
 $color-black: #000000;
+$color-border-icon:#D5CFCF;
+$color-one: rgb(213, 207, 207);
 $_min-width: 768px;
 $_min-width-desk: 992px;
+
+
+@mixin font-family {
+    font-family: Shrikhand;
+}
+
+@mixin background-color-one {
+    background-color: $color-one;
+}
+
+@mixin background-color-two {
+    background-color: rgba(245, 245, 245, 1);
+}
+
+@mixin background-color-otherpages {
+    background-color: rgba(242, 242, 242, 1);
+}
+
+@mixin displayflex {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin displayflexs {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin displayflex-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin displayflexs-align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+

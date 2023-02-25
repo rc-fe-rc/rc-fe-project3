@@ -47,3 +47,564 @@ html {
             letter-spacing: 15px;
             animation: flash 1.2s linear infinite;
         }
+
+    .title {
+      @include displayflex-align;
+      margin: 0px 0px 25px 0px; 
+          .headertitles {   
+              padding: 10px;    
+              font-size: 2rem;
+              @include font-family;
+              
+          @media (min-width: $_min-width) {
+              font-size: 3rem;
+          }
+      
+          @media (min-width: $_min-width-desk) {
+              font-size: 3.5rem;
+          }
+          }
+  }
+
+  .marginlayout {
+      width: 100%; 
+      padding: 0px 20px;
+      margin:auto;
+
+  @media (min-width: $_min-width-desk) {
+      width: 1400px; 
+  }
+  }
+
+  .marginlayouts {
+      width: 100%; 
+      margin:auto;   
+
+  @media (min-width: $_min-width-desk) {  
+      width: 1400px; 
+  }
+  }
+
+  .searchcity {
+      margin-bottom: 0px;
+      @include background-color-one;
+      padding: 15px 0px;
+          .search {
+              @include displayflex;
+          }
+              .namecity {
+                  margin: 0px 15px;
+                  @include background-color-one;
+                  border:$color-one;
+              }
+
+  @media (min-width: $_min-width-desk) {
+      height: 60px;
+              .logo {
+                  font-size: 1.2rem;
+              } 
+              .namecity {
+                  font-size: 1.2rem;
+              }     
+  }
+  }
+
+  .restaurantsdiscover { 
+      @include background-color-two;
+      .restaurantdiscovercard {
+          padding-top: 60px;
+          padding-bottom: 60px;   
+      }
+          .titlecard {
+              font-size: 1.4375rem; 
+              font-weight: 900;
+              text-align: center;
+              margin: auto;
+          }
+          .titlelayout {
+              text-align: center;    
+          }
+          .subtitle {
+              font-size: 1rem;
+              text-align: center;
+              margin: 20px auto;
+          }
+          .buttonlayout { 
+              @include displayflex-align;
+          }
+          .explorer {
+              width: 55%;
+              @include displayflex-align;
+              border-radius: 20px;
+              padding: 18px 20px;
+              font-size: 0.8125rem;
+              background: linear-gradient($color-pink , $color-purple);
+              color: $color-white;
+              border: none;
+              box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          }
+          .explorer:hover {
+              cursor: pointer;
+              filter: brightness(1.1);
+              box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
+              animation:fills 1s;
+          }
+
+  @media (min-width: $_min-width) {
+          .titlecard {              
+              font-size: 2rem;
+          }
+          .subtitle {
+              font-size: 1.2rem;
+          }
+          .explorer {
+              font-size: 1.1rem;
+              width: 250px;
+          }
+  }
+  @media (min-width: $_min-width-desk) {
+
+          .titlecard {              
+              font-size: 2.5rem;
+          }
+          .subtitle {
+              font-size: 1.5rem;
+              text-align: center;
+          }
+  }
+  }
+
+  .fonctionnement { 
+      .fonctionnementcard {
+          padding-top: 50px;
+          padding-bottom: 60px;
+      }
+          .fonctionnementtitle {
+              font-size: 1.25rem;
+              font-weight: 900;
+              padding-bottom: 49px;
+          }
+              .rubriquecontent {
+                  @include background-color-two;
+                  display: flex;
+                  align-items: center;
+                  width: 100%;
+                  height: 75px;
+                  border-radius: 35px;
+                  margin: 11px auto;
+                  border: solid 1px;
+                  border: none;
+                  box-shadow: 0px 8px 11px rgba(0, 0, 0, 0.1);
+              } 
+
+              .rubriquecontent:hover {
+                  cursor: pointer;
+                  background-color: $color-purple-light;
+              }
+                  .circle {
+                      width: 25px;
+                      height: 25px;
+                      border: solid 1px;
+                      border-radius: 25px;
+                      background-color:$color-purple;
+                      margin-left: -10px;
+                  }
+                  .numberlayout {
+                      padding:2px 7px;
+                      color: $color-white;
+                  }
+                  .iconfonctionnement {
+                      font-size: 1.36rem;
+                      color: $color-black;
+                      padding-left: 22px;
+                  }
+                  .iconfonctionnements {
+                      padding-left: 2px;
+                  }
+                  .iconfonctionnementspe { 
+                      color: $color-purple; 
+                  }
+                  .text {
+                      padding: 0px 28px;
+                      font-weight: 700;
+                      font-size: 1.0625rem;
+                  }  
+                  
+  @media (min-width: $_min-width) {
+          .fonctionnementtitle {
+                  margin:0px auto;
+                  text-align: center;
+                  font-size: 1.7rem;
+                  font-weight: 900;
+                  padding-bottom: 49px;
+              }
+              .rubriquecontent {
+                  width: 350px;
+                  margin: 20px auto;
+                  height: 100px;   
+              }
+              .text {
+                  font-size: 1.2rem;
+              }
+  }
+  @media (min-width: $_min-width-desk) {
+          .fonctionnementtitle {
+              font-size: 2rem;
+              }
+          
+          .rubriques {
+              display: flex;
+          }
+              .text {
+                  font-size: 1.2rem;
+              }
+  }
+  }
+
+  .listerestaurant {
+      @include background-color-two;
+      .listrestaurantcard {
+          padding-top: 60px;
+          padding-bottom: 75px;
+      }
+          .restaurantslisttitle {
+              font-size: 1.25rem;
+              font-weight: 900;
+              padding-bottom: 18px;
+          }
+              .restaurantsavailable {    
+                  width: 100%;  
+                  border: solid 1px;
+                  border: none;
+                  box-shadow: 0px 8px 9px rgba(0, 0, 0, 0.1);
+                  margin: 10px 0px;
+                  position: relative;
+                  border-radius: 15px;
+              }
+                  .picturesize {
+                      display: flex;
+                      width: 100%;
+                      height: 10.938rem;
+                  }
+                  .fotosize {
+                      border-top-right-radius:15px;
+                      border-top-left-radius:15px;
+                      width:100%;
+                      object-fit: cover;  
+                    
+                  }
+                  .newrestaurantlogo {
+                      position: absolute;
+                      top: 0px;
+                      width: 20%;
+                      height: 11%;
+                      border: solid 1px;
+                      border-radius: 5px;
+                      border-color: $color-green;
+                      background-color: $color-green;
+                      color: green;
+                      text-align: center;
+                      left: 70%;
+                      top: 5%;
+                      padding-top: 5px;
+                      font-size: 0.8125rem;            
+                  }
+                  .restaurantlayout {
+                      @include displayflexs-align;   
+                      margin-left: 15px;
+                      margin-right: 27px;
+                  }
+                      .restaurantname {   
+                          width: 120px;
+                          font-size: 0.875rem;
+                          font-weight: 700;
+                          padding-top: 20px;
+                      }
+                      .hearticon {
+                          font-size: 1rem;
+                          color: #d5cfcf;
+                          padding-top: 20px;
+                          @media (min-width: $_min-width) {
+                              font-size: 1.5rem;
+                          }
+                          @media (min-width: $_min-width-desk) {
+                              font-size: 1.5rem;
+                          }
+                  }
+                      .iconheartsfills {
+                          position: absolute;
+                          color: $color-border-icon;
+                          font-size: 1rem;
+                          opacity: 0;
+                          padding-top: 20px;
+                      &:hover {
+                          -webkit-background-clip: text;
+                          -webkit-text-fill-color: transparent;
+                          background-image:linear-gradient( #9356DC,#FF79DA );
+                          animation:fills 1s;
+                          opacity: 1;
+                      }
+
+                      @media (min-width: $_min-width) {
+                      &:hover {  
+                          font-size: 1.5rem;
+                      }
+                      }      
+                  }
+                  .restaurantlocalisation {   
+                      font-size: 0.875rem;
+                      padding: 15px;    
+                  }
+
+  @media (min-width: $_min-width) {
+          .restaurantslisttitle {     
+              font-size: 1.7rem;
+              text-align: center;
+              margin: 0px auto;
+          }
+              .restaurantsavailable {
+                  width: 68%;
+                  margin: 50px auto;
+              }
+              .picturesize {
+                  height:12.5rem;
+              }
+              .fotosize {
+                  width: 100%;
+                  object-fit: cover; 
+              }
+              .newrestaurantlogo {
+                  left: 75%;
+                  height: 10%;
+              }
+  }
+
+  @media (min-width: $_min-width-desk) {
+
+          .restaurantslisttitle {
+              font-size: 2rem;   
+          }
+          .restaurantsfeatures {
+              @include displayflex;
+              flex-wrap: wrap;
+          }
+              .restaurantsavailable { 
+                  width: 460px;
+                  margin: 15px 10px;
+              }
+              .picturesize {
+                  width: 100%;
+                  height:15rem;
+              }
+              .fotosize {
+                  width: 100%;
+                  object-fit: cover;
+              }
+              .newrestaurantlogo {
+                  left: 70%;
+                  width: 25%;
+                  height: 13%;
+                  padding-top: 11px;
+                  font-size: 1.1rem;
+              }
+              .restaurantname {
+                  width: 150px;
+                  font-size: 1rem;
+              }
+              .restaurantlocalisation {      
+                  font-size: 1rem;
+                  margin-top: 10px;  
+              }
+  }
+}
+      .h1-title {
+          text-align: center;
+          color: $color-black;
+          text-transform: uppercase;
+          font-size: 1rem;
+          font-weight: 700;
+          &:hover {
+              color: $color-purple;
+          }
+
+      @media (min-width: $_min-width) {
+          font-size: 1.2rem; 
+      }
+
+      @media (min-width: $_min-width-desk) {
+          font-size: 1.2rem;
+      }
+      }
+      .contact {
+          color:$color-white;
+      }
+
+      .contact-form {
+          text-align: center;
+          margin: 35px auto 30px auto;
+          font-size: 1rem;
+      }
+          .form-group {    
+              font-weight: bolder;
+              text-align: center;  
+              text-transform: uppercase;
+          }
+          .form-control {
+              width: 100%;
+              height: 2rem;
+              border:1px solid $color-one;
+              margin-top: 11px;
+              text-align: center;
+
+          @media (min-width: $_min-width) {
+              width: 500px;
+              height: 30px;
+          }
+          
+          @media (min-width: $_min-width-desk) {
+              width: 768px;
+              height: 30px;
+          }
+          }
+          .form-control:hover {
+              background-color: $color-green;
+          }
+  
+      .text-area {
+          width: 100%;
+          height: 150px;
+
+      @media (min-width: $_min-width) {
+          width: 500px;
+      }
+
+      @media (min-width: $_min-width-desk) {
+          width: 768px;
+          height: 200px;
+      }
+      }
+      .submitbutton {
+          @include displayflex;
+      }
+      .btn-block {  
+          margin: 50px 0px;
+          width: 100%;
+          height: 50px;
+          font-size: 0.9375rem;
+          color: $color-white;
+          background: linear-gradient($color-pink , $color-purple); 
+          border-radius: 20px;
+          border: none;
+
+        @media (min-width: $_min-width-desk) {
+          height: 40px;
+          width: 200px;
+      }           
+      }
+      .btn-block:hover {
+          cursor: pointer;
+          filter: brightness(1.1);
+          box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
+          animation: fills 1s;
+      }
+  
+      .iframesize {
+          width: 100%;
+          height: 375px;
+
+      @media (min-width: $_min-width) {
+          width: 768px;
+      }
+
+      @media (min-width: $_min-width-desk) {
+          width: 768px;
+      }
+      }
+      .copyright {
+          margin-top: 11px;
+
+      @media (min-width: $_min-width-desk) {
+          font-size: 1.2rem;
+      }
+      }
+      .control {
+          margin-top: 11px;
+          font-weight: 300;
+
+      @media (min-width: $_min-width-desk) {
+          font-size: 1rem;
+      }
+      }
+      .ohmzfood {
+          @include font-family;
+      }
+
+.footer { 
+  background-color: $color-black;
+  color: $color-white;
+  .footercard {
+      padding: 20px;
+  }
+      .footertitle {
+          @include font-family;
+          font-size: 1.125rem;
+      }
+          .footercook {
+              display: flex;
+              margin-top: 24px;
+          }
+          .footercookspe {
+              display: flex;
+              margin-top: 11px;
+          }
+              .textpropose {
+                  margin-left: 10px; 
+              }
+          .footerrules {
+              margin-top: 11px;
+          }
+          .contact {
+              margin-top: 11px;
+          }
+
+@media (min-width: $_min-width) {
+  
+.footer {
+  width: 768px;
+}
+      .footercard {
+          width: 250px;
+          margin: 0px auto;          
+          }
+}
+
+@media (min-width: $_min-width-desk) {
+.footer {
+  width: 1400px;
+}
+      .footercard {
+          width: 400px;
+          margin: 0px auto;     
+          }
+          .footertitle {
+              font-size: 1.5rem;
+          }
+                  .textpropose {
+                      margin-left: 20px;
+                      width: 300px;
+                      font-size: 1.2rem;
+                  }
+              .fork {
+                  font-size: 1.3rem;
+              }
+              .shakehand {
+                  font-size: 1.3rem;
+              }
+          .footerrules {
+              font-size: 1.2rem;
+          }
+          .contact {
+              font-size: 1.2rem;
+          }      
+}
+} 
