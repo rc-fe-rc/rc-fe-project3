@@ -3,14 +3,9 @@
   "version": "1.0.0",
   "description": "dependences",
   "main": "index.js",
-"scripts": {
-  "sass": "sass --watch main.scss style.css",
-  "prefix": "postcss style.css --use autoprefixer -d prefixed"
-
-},
-"repository": {
-  "type": "git",
-  "url": "git+https://github.com/rc-fe-rc/rc-fe-project3.git"
+  "scripts": {
+    "sass": "sass --watch main.scss style.css",
+    "prefix": "postcss style.css --use autoprefixer -d prefixed"
 },
   "author": "",
   "license": "ISC",
