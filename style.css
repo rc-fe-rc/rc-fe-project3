@@ -6,6 +6,15 @@
     visibility: hidden;
   }
 }
+@keyframes transition9 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
 @keyframes flash {
   0% {
     color: #fff900;
