@@ -8,6 +8,10 @@
   "prefix": "postcss style.css --use autoprefixer -d prefixed"
 
 },
+"repository": {
+  "type": "git",
+  "url": "git+https://github.com/rc-fe-rc/rc-fe-project3.git"
+},
   "author": "",
   "license": "ISC",
   "browserslist": "last 4 versions"
