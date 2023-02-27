@@ -1,0 +1,316 @@
+@import'__animations.scss';
+@import'__variables.scss';
+
+    .titre {
+        margin:15px 0px;
+            .headerlayout {  
+                @include displayflexs-align;   
+                padding: 20px;
+                margin: auto;
+            }
+            .headerlayouts {  
+                max-width: 700px;
+                @include displayflexs-align;  
+                padding: 20px;
+                margin:25px auto;
+            @media (min-width: $_min-width) {      
+                @include displayflexs-align;    
+            }
+            }
+                .leftarrowsize {
+                    width: 4%; 
+                @media (min-width: $_min-width) {
+                    width: 3%; 
+     
+                }
+                }
+                .leftarrow {
+                    font-size: 1.875rem;
+                    
+                @media (min-width: $_min-width) {      
+                    font-size: 2rem;     
+                }
+                }
+                .headertitle { 
+                    width: 64%;    
+                    font-size: 1.875rem;
+                    @include font-family;   
+                @media (min-width: $_min-width) {
+                    width: 23%; 
+                    font-size: 2.5rem;     
+                }
+            
+                @media (min-width: $_min-width-desk) {
+                    width: 17%; 
+                }
+        }               
+        }
+        .imgandtitlelayoutsize {
+            margin: auto;
+            height: 10rem;
+        @media (min-width: $_min-width) {
+            width: 100%;
+            height: 16.25rem;
+        }
+
+        @media (min-width: $_min-width-desk) {
+            width: 100%;
+            height: 25rem; 
+        }
+        }
+        .imgandtitlelayout { 
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    .menu {
+        position: relative;
+        width: 100%;
+        @include background-color-otherpages;
+        border: solid 1px;
+        border: none;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+
+        /*top:-20px;*/
+
+    @media (min-width: $_min-width) {
+       
+        /*top: -65px;*/
+        }
+
+    @media (min-width: $_min-width-desk) {
+        margin-top:11px;
+        /*top: -100px;*/
+    } 
+    }
+        .menucards {
+            padding: 40px 25px; 
+            margin-top: -35px;
+        @media (min-width: $_min-width) {
+    
+            margin-top: -60px;
+            padding: 40px 35px; 
+            /*top: -65px;*/
+            }
+    
+        @media (min-width: $_min-width-desk) {
+            margin-top:-100px;
+            /*top: -100px;*/
+        } 
+        }
+            .titlayoutcard {
+                @include displayflexs-align;  
+            }
+                .titleresto {
+                    @include font-family;
+                    font-size: 1.6875rem;
+
+                @media (min-width: $_min-width-desk) {
+                    font-size: 2rem;
+                }
+                }
+                .iconhearts {
+                    font-size: 2rem;
+                    color: $color-border-icon;
+                }
+                .iconheartsfill {
+                    position: absolute;
+                    color: $color-border-icon;
+                    font-size: 2rem;
+                    opacity: 0;
+                    
+                &:hover {
+                    opacity: 1;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-image:linear-gradient( #9356DC,#FF79DA );
+                    animation: fills 1s;
+                }
+                }
+            .entree__spe {
+                display: inline-block;
+                margin: 30px 0px;
+                text-transform: uppercase;
+                padding: 5px 0px;
+                border-bottom: 4px solid $color-green;
+            @media (min-width: $_min-width) {
+                font-size: 1.2rem;
+            }
+
+            @media (min-width: $_min-width-desk) {
+                font-size: 1.2rem;
+            }
+            }
+            .entreenamecard:hover .bj {
+                width: calc(100% - 145px); 
+            }
+            .entreelayout {
+            @media (min-width: $_min-width-desk) {
+                @include displayflexs;
+            }  
+        }        
+            .entreenamelayout {
+   
+            @media (min-width: $_min-width-desk) {
+                width: 33%;  
+            }
+            @media (min-width: $_min-width-desksize) {
+                width: 32%;  
+            }
+        }
+            .entreenamecard {  
+                position: relative; 
+                @include displayflexs;
+                overflow: hidden;
+                cursor: pointer;
+                margin: 10px 0px;
+                width: 100%;
+                border: 1px solid;
+                border-radius: 12px;
+                padding: 12px;
+                box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+                border-color: rgba(242, 242, 242, 1);
+                transition: transform cubic-bezier(0, .75, .08, 1);
+
+                &:nth-child(1) {
+                    animation: anim 1s 1s ease-out forwards;
+                }
+
+                &:nth-child(2) {
+                    animation: anim 1s 1.2s ease-out forwards;
+                }
+
+                &:nth-child(3) {
+                    animation: anim 1s 1.4s ease-out forwards;
+                }
+
+                &:nth-child(4) {
+                    animation: anim 1s 1.6s ease-out forwards;
+                }
+
+            @media (min-width: $_min-width-desk) {
+                width: 100%;
+            }
+                .spins{
+                position: absolute;
+                top: 0;
+                right: -4rem;
+                transition: all 1s;
+                width: 4rem;
+                height: 100%;
+                border-top-right-radius: 12px;
+                border-bottom-right-radius: 12px;
+                transform-origin: center right;
+                border: 1px solid;
+                border: none;
+                background: $color-green;
+            }
+            &:hover .spins{   
+                right: 0px;
+            }    
+                .spin::before {
+                content: '\f058';
+                top: 0px;
+                right: -60px;
+                position: absolute;
+                border-radius: 24px;
+                transition: all 0.8s;
+                transform: rotate(-270deg);   
+                font-size: 1.5em;
+                background: $color-green;
+                color: $color-white;
+                margin-top: 25px;
+                @include displayflex-align;
+            }
+            &:hover .spin::before{    
+                transform: rotate(360deg); 
+                right: 20px;
+            }
+                .nameingredients {            
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    font-size: 0.938rem;
+                    font-weight: 700;
+
+                @media (min-width: $_min-width) {
+                    font-size:  1.0625rem;    
+                }
+
+                @media (min-width: $_min-width-desk) {      
+                    font-size: 0.938rem;            
+                }
+
+                @media (min-width: $_min-width-desksize) {
+                    font-size: 1.0625rem;
+                }             
+                }
+                .ingredient {    
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    font-size: 0.9rem;
+                    font-weight: 300;
+                    margin-top: 10px;
+                @media (min-width: $_min-width) {
+                    font-size:  1.0625rem;
+                }
+
+                @media (min-width: $_min-width-desk) {      
+                    font-size: 0.938rem;       
+                }  
+                
+                @media (min-width: $_min-width-desksize) {
+                    font-size: 1.0625rem;       
+                }    
+                }
+            &:hover .pricemenu {
+                transform: translateX(-55px);
+
+            @media (min-width: $_min-width) {
+                transform: translateX(-80px);
+            }
+            }
+                .pricemenu {
+                    display: flex;
+                    align-items: end;
+                    width: 45px;
+                    font-weight: 700;
+                    transition: all 1s;
+
+                @media (min-width: $_min-width) {
+                    display: flex;
+                    margin-right: 0px;
+                    width: 7%;
+                }
+
+                @media (min-width: $_min-width-desk) {
+                    display: flex;
+                    margin-right: 0px;    
+                }
+                }
+}
+            .orderbuttoncard { 
+                margin:40px auto;
+                @include displayflex;
+            }
+                .submit {
+                    width: 200px;
+                    height: 50px;
+                    font-size: 0.9375rem;
+                    color: $color-white;
+                    background: linear-gradient($color-pink , $color-purple); 
+                    border-radius: 20px;
+                    border: none;
+                }
+                .submit:hover {
+                    cursor: pointer;
+                    filter: brightness(1.1);
+                    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
+                    animation:fills 1s;
+                    /*transform: scale(1.2);*/  
+                }
+        
+            
+
