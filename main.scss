@@ -250,8 +250,7 @@ html {
   @media (min-width: $_min-width-desk) {
           .fonctionnementtitle {
               font-size: 2rem;
-              }
-          
+              }  
           .rubriques {
               display: flex;
           }
@@ -290,8 +289,7 @@ html {
                       border-top-right-radius:15px;
                       border-top-left-radius:15px;
                       width:100%;
-                      object-fit: cover;  
-                    
+                      object-fit: cover;     
                   }
                   .newrestaurantlogo {
                       position: absolute;
@@ -568,7 +566,6 @@ html {
           }
 
 @media (min-width: $_min-width) {
-  
 .footer {
   width: 768px;
 }
