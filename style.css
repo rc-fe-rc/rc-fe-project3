@@ -562,8 +562,7 @@ html {
 }
 
 .displaysite {
-  visibility: hidden;
-  animation: transition9 2s linear 2s forwards;
+  animation: transition9 2s linear 1s forwards;
 }
 
 .loadersite {
@@ -578,7 +577,7 @@ html {
   background: #000000;
   padding-top: 50px;
   text-align: center;
-  animation: transition 1s linear 1s forwards;
+  animation: transition 1s linear forwards;
 }
 @media (min-width: 992px) {
   .loadersite {
