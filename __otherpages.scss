@@ -39,7 +39,7 @@
                 }
             
                 @media (min-width: $_min-width-desk) {
-                    width: 17%; 
+                    width: 23%; 
                 }
         }               
         }
@@ -76,7 +76,7 @@
     }
         .menucards {
             padding: 40px 25px; 
-           margin: 60px auto 0;
+           margin: -35px auto 0;
         @media (min-width: $_min-width) {
             margin-top: -60px;
             padding: 40px 35px; 
@@ -160,24 +160,24 @@
                 border-radius: 12px;
                 box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
                 border-color: rgba(242, 242, 242, 1);
-                transition: transform cubic-bezier(0, .75, .08, 1);
+
                 @media (min-width: $_min-width) {
-                    width: 500px;
+                    width: 600px;
                 }
                 &:nth-child(1) {
-                    animation: anim 1s 1s ease-out forwards;
+                    animation: anim 0.5s 1s ease-out forwards;
                 }
 
                 &:nth-child(2) {
-                    animation: anim 1s 1.2s ease-out forwards;
+                    animation: anim 0.5s 1.2s ease-out forwards;
                 }
 
                 &:nth-child(3) {
-                    animation: anim 1s 1.4s ease-out forwards;
+                    animation: anim 0.5s 1.4s ease-out forwards;
                 }
 
                 &:nth-child(4) {
-                    animation: anim 1s 1.6s ease-out forwards;
+                    animation: anim 0.5s 1.6s ease-out forwards;
                 }
 
             @media (min-width: $_min-width-desk) {
@@ -189,7 +189,7 @@
                 align-items: center;
                 transition: all 1s;
                 width: 20%;
-                margin-right: -20%;
+                margin-right: -21%;
                 border-top-right-radius: 12px;
                 border-bottom-right-radius: 12px;
                 transform-origin: center right;
