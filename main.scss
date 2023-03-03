@@ -72,7 +72,7 @@ html {
       margin:auto;
 
   @media (min-width: $_min-width-desk) {
-      width: 1400px; 
+      max-width: 1400px; 
   }
   }
 
@@ -81,7 +81,7 @@ html {
       margin:auto;   
 
   @media (min-width: $_min-width-desk) {  
-      width: 1400px; 
+      max-width: 1400px; 
   }
   }
 
