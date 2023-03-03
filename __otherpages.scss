@@ -76,7 +76,7 @@
     }
         .menucards {
             padding: 40px 25px; 
-           margin: -35px auto 0;
+            margin: -35px auto 0;
         @media (min-width: $_min-width) {
             margin-top: -60px;
             padding: 40px 35px; 
@@ -134,7 +134,7 @@
                 width:75%; 
             }   
             .entreenamecard:hover .bj {
-                width:60%;
+                width:55%;
             }
             .entreelayout {
             @media (min-width: $_min-width-desk) {
@@ -161,24 +161,24 @@
                 box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
                 border-color: rgba(242, 242, 242, 1);
 
-                @media (min-width: $_min-width) {
-                    width: 600px;
-                }
-                &:nth-child(1) {
-                    animation: anim 0.5s 1s ease-out forwards;
-                }
+            &:nth-child(1) {
+                animation: anim 0.5s 1s ease-out forwards;
+            }
 
-                &:nth-child(2) {
-                    animation: anim 0.5s 1.2s ease-out forwards;
-                }
+            &:nth-child(2) {
+                animation: anim 0.5s 1.2s ease-out forwards;
+            }
 
-                &:nth-child(3) {
-                    animation: anim 0.5s 1.4s ease-out forwards;
-                }
+            &:nth-child(3) {
+                animation: anim 0.5s 1.4s ease-out forwards;
+            }
 
-                &:nth-child(4) {
-                    animation: anim 0.5s 1.6s ease-out forwards;
-                }
+            &:nth-child(4) {
+                animation: anim 0.5s 1.6s ease-out forwards;
+            }
+            @media (min-width: $_min-width) {
+                width: 600px;
+            }               
 
             @media (min-width: $_min-width-desk) {
                 width: 100%;
@@ -213,7 +213,7 @@
             &:hover .spin::before{    
                 transform: rotate(360deg); 
             }
-          
+
                 .nameingredients { 
                     white-space : nowrap;
                     overflow : hidden;
@@ -225,11 +225,9 @@
                 @media (min-width: $_min-width) {
                     font-size:  1.0625rem;    
                 }
-
                 @media (min-width: $_min-width-desk) {      
                     font-size: 0.938rem;            
                 }
-
                 @media (min-width: $_min-width-desksize) {
                     font-size: 1.0625rem;
                 }             
@@ -244,7 +242,6 @@
                     font-weight: 300;
                     margin-top: 10px;
   
-
                 @media (min-width: $_min-width) {
                     font-size:  1.0625rem;
                 }
@@ -268,9 +265,8 @@
             &:hover .pricemenu {
                 margin-left: -50px;
             }
-        }
+            }
 
- 
             .orderbuttoncard { 
                 margin:40px auto;
                 @include displayflex;

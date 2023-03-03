@@ -486,18 +486,17 @@ html {
       }
       .btn-block {  
           margin: 50px 0px;
-          width: 100%;
+          width: 55%;
           height: 50px;
           font-size: 0.9375rem;
           color: $color-white;
           background: linear-gradient($color-pink , $color-purple); 
           border-radius: 20px;
           border: none;
-
-        @media (min-width: $_min-width-desk) {
-          height: 40px;
-          width: 200px;
-      }           
+        @media (min-width: $_min-width) {
+            width: 200px;
+            height: 40px;
+        }                   
       }
       .btn-block:hover {
           cursor: pointer;
