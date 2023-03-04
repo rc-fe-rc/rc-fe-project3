@@ -1,12 +1,5 @@
 
-@keyframes transition {
-    0% {   
-        visibility: visible;
-    }
-    100% {     
-        visibility: hidden;
-    }
-}
+
 
 @keyframes Animationspin {
     0% {
@@ -25,6 +18,15 @@
     100% {
         visibility: visible;   
         opacity: 1;
+    }
+}
+
+@keyframes transition {
+    0% {   
+        visibility: visible;
+    }
+    100% {     
+        visibility: hidden;
     }
 }
 
@@ -96,7 +98,7 @@
 
 @keyframes anim {
     0% {
-        visibility: 0;
+        opacity: 0;
     }
     100% {
         opacity: 1;
