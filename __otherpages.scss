@@ -146,9 +146,6 @@
             @media (min-width: $_min-width-desk) {
                 width: 33%;  
             }
-            @media (min-width: $_min-width-desksize) {
-                width: 32%;  
-            }
         }
             .entreenamecard {  
                 opacity: 0;
@@ -224,13 +221,7 @@
 
                 @media (min-width: $_min-width) {
                     font-size:  1.0625rem;    
-                }
-                @media (min-width: $_min-width-desk) {      
-                    font-size: 0.938rem;            
-                }
-                @media (min-width: $_min-width-desksize) {
-                    font-size: 1.0625rem;
-                }             
+                }         
                 }
                       
                 .ingredient {
@@ -244,15 +235,7 @@
   
                 @media (min-width: $_min-width) {
                     font-size:  1.0625rem;
-                }
-
-                @media (min-width: $_min-width-desk) {      
-                    font-size: 0.938rem;       
-                }  
-                
-                @media (min-width: $_min-width-desksize) {
-                    font-size: 1.0625rem;       
-                }    
+                } 
                 }
                 .pricemenu {
                     padding-bottom: 12px;  

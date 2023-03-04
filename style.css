@@ -279,11 +279,6 @@
     width: 33%;
   }
 }
-@media (min-width: 1175px) {
-  .entreenamelayout {
-    width: 32%;
-  }
-}
 
 .entreenamecard {
   opacity: 0;
@@ -364,16 +359,6 @@
     font-size: 1.0625rem;
   }
 }
-@media (min-width: 992px) {
-  .entreenamecard .nameingredients {
-    font-size: 0.938rem;
-  }
-}
-@media (min-width: 1175px) {
-  .entreenamecard .nameingredients {
-    font-size: 1.0625rem;
-  }
-}
 .entreenamecard .ingredient {
   white-space: nowrap;
   overflow: hidden;
@@ -384,16 +369,6 @@
   margin-top: 10px;
 }
 @media (min-width: 768px) {
-  .entreenamecard .ingredient {
-    font-size: 1.0625rem;
-  }
-}
-@media (min-width: 992px) {
-  .entreenamecard .ingredient {
-    font-size: 0.938rem;
-  }
-}
-@media (min-width: 1175px) {
   .entreenamecard .ingredient {
     font-size: 1.0625rem;
   }
