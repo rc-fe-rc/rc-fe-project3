@@ -11,7 +11,6 @@
     opacity: 0;
   }
   100% {
-    visibility: visible;
     opacity: 1;
   }
 }
@@ -413,7 +412,6 @@
     opacity: 0;
   }
   100% {
-    visibility: visible;
     opacity: 1;
   }
 }
@@ -521,6 +519,7 @@ html {
 .loadersite {
   font-size: 1rem;
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   right: 0;

@@ -26,6 +26,7 @@ html {
     .loadersite {
         font-size:1rem;
         position: fixed;
+        z-index: 10;
         top: 0;
         left: 0;
         right: 0;
@@ -271,7 +272,8 @@ html {
               font-weight: 900;
               padding-bottom: 18px;
           }
-              .restaurantsavailable {    
+              .restaurantsavailable {  
+             
                   width: 100%;  
                   border: solid 1px;
                   border: none;
