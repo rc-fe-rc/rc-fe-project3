@@ -226,7 +226,7 @@ html {
                       color: $color-purple; 
                   }
                   .text {
-                      padding: 0px 28px;
+                      padding: 0px 15px;
                       font-weight: 700;
                       font-size: 1.0625rem;
                   }  
@@ -240,12 +240,12 @@ html {
                   padding-bottom: 49px;
               }
               .rubriquecontent {
-                  width: 350px;
+                  width: 300px;
                   margin: 20px auto;
                   height: 100px;   
               }
               .text {
-                  font-size: 1.2rem;
+                  font-size: 1rem;
               }
   }
   @media (min-width: $_min-width-desk) {
