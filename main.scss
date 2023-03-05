@@ -567,22 +567,19 @@ html {
           }
 
 @media (min-width: $_min-width) {
-.footer {
-  width: 768px;
-}
+
       .footercard {
-          width: 250px;
-          margin: 0px auto;          
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          width: 250px;         
           }
 }
 
 @media (min-width: $_min-width-desk) {
-.footer {
-  width: 1400px;
-}
+
       .footercard {
-          width: 400px;
-          margin: 0px auto;     
+          width: 300px;   
           }
           .footertitle {
               font-size: 1.5rem;

@@ -1094,21 +1094,16 @@ html {
   margin-top: 11px;
 }
 @media (min-width: 768px) {
-  .footer .footer {
-    width: 768px;
-  }
   .footer .footercard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 250px;
-    margin: 0px auto;
   }
 }
 @media (min-width: 992px) {
-  .footer .footer {
-    width: 1400px;
-  }
   .footer .footercard {
-    width: 400px;
-    margin: 0px auto;
+    width: 300px;
   }
   .footer .footertitle {
     font-size: 1.5rem;
